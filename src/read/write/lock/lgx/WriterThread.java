@@ -18,8 +18,7 @@ public class WriterThread extends Thread{
 			while(index<4) {
 				char c = nextchar();
 				data.write(c);
-				Thread.sleep(random.nextInt(300));
-				
+				Thread.sleep(random.nextInt(300));			
 			}
 
 		}catch(InterruptedException e) {
@@ -29,8 +28,8 @@ public class WriterThread extends Thread{
 	public char nextchar() {
 		char c = filler.charAt(index);
 		index++;
-		if(index >= filler.length()) {
-			index = 0;
+		if(index > filler.length()) {
+			return 0;
 		}
 		return c;
 	}

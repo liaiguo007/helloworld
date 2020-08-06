@@ -39,11 +39,13 @@ public class Data {
 	}
 	
 	private void doWrite(char c) {
+		StringBuilder sb = new StringBuilder();
 		for(int i =0;i < buffer.length;i++) {
-			buffer[i] = c;
+			//buffer[i] = c;
+			sb.append(c);
 			slowly();
 		}
-		System.out.println(Thread.currentThread().getName() + "    write " + buffer.toString());
+		System.out.println(Thread.currentThread().getName() + "    write " + sb.toString());
 
 	}
 	
