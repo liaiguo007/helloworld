@@ -9,7 +9,7 @@ public class ReaderThread extends Thread{
 
 	public void run() {
 		try {
-			while(index<5) {
+			while(index<4) {
 				char[] readbuf = data.read();
 				index++;
 				System.out.println(Thread.currentThread().getName() + "reads " + String.copyValueOf(readbuf));

@@ -43,7 +43,7 @@ public class Data {
 			buffer[i] = c;
 			slowly();
 		}
-		System.out.println(Thread.currentThread().getName() + "write " + buffer.toString());
+		System.out.println(Thread.currentThread().getName() + "    write " + buffer.toString());
 
 	}
 	
