@@ -19,18 +19,26 @@ public class Data {
 	}
 	
 	
-	public synchronized void save() {
-		if(!flag)
+	public  void save() {
+		if(!flag) {
+			System.out.println(Thread.currentThread().getName() + "balking content" + content);
 			return;
+			}
 		doSave();
+		try {
+			Thread.sleep(100);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		flag = false;
 	}
 	
 	public synchronized void doSave() {
-		System.out.println(Thread.currentThread().getName() + "saving content");
 		try {
 			FileWriter fw = new FileWriter(fileName);
-			fw.write(content);
+			System.out.println(Thread.currentThread().getName() + "saving content" + content);
+			fw.append(content);
 			fw.close();
 		} catch (IOException e) {	
 			// TODO Auto-generated catch block
