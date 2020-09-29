@@ -19,6 +19,8 @@ public class CountupThread extends Thread{
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
+				}finally {
+					doShutDown();
 				}
 			}
 		}
