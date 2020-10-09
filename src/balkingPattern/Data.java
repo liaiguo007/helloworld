@@ -21,7 +21,7 @@ public class Data {
 	
 	public  void save() {
 		if(!flag) {
-			System.out.println(Thread.currentThread().getName() + "balking content" + content);
+			System.out.println(Thread.currentThread().getName() + "**********balking content" + content);
 			return;
 			}
 		doSave();
