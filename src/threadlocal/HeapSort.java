@@ -30,7 +30,6 @@ public class HeapSort {
 	        int temp = arr[parent];
 	        //左孩子
 	        int lChild = 2 * parent + 1;
-
 	        while (lChild < length) {
 	            //右孩子
 	            int rChild = lChild + 1;
@@ -38,12 +37,10 @@ public class HeapSort {
 	            if (rChild < length && arr[lChild] < arr[rChild]) {
 	                lChild++;
 	            }
-
 	            // 如果父结点的值已经大于孩子结点的值，则直接结束
 	            if (temp >= arr[lChild]) {
 	                break;
 	            }
-
 	            // 把孩子结点的值赋给父结点
 	            arr[parent] = arr[lChild];
 
