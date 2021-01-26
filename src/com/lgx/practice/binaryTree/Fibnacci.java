@@ -1,7 +1,7 @@
 package com.lgx.practice.binaryTree;
 
 public class Fibnacci {
-	
+	//1,1,2,3,5,8
 	public static int fib(int n) {
 		
 		if(n == 1 || n == 2)
@@ -30,7 +30,7 @@ public class Fibnacci {
 			return n*fib3(n-1);
 	}
 	public static void main(String []args) {
-		int result = fib3(5);
+		int result = fib2(8);
 		System.out.print(result);
 	}
 	

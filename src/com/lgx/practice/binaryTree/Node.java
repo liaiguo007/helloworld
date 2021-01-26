@@ -3,6 +3,11 @@ package com.lgx.practice.binaryTree;
 public class Node {
 	public int data;
 	public Node leftNode;
+	public Node rightNode;
+	public Node next;
+	public Node(int data) {
+		this.data = data;
+	}
 	public int getData() {
 		return data;
 	}
@@ -27,9 +32,5 @@ public class Node {
 	public void setNext(Node next) {
 		this.next = next;
 	}
-	public Node rightNode;
-	public Node next;
-	public Node(int data) {
-		this.data = data;
-	}
+	
 }

@@ -97,8 +97,7 @@ public class FindNode {
 			curNode = curNode.leftNode;
 		}
 		return minNode;
-	}
-	
+	}	
 	public boolean deleteNode(int num,Node root) {
 		Node preNode = root;
 		Node curNode = preNode.next;
