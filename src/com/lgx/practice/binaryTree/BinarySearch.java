@@ -21,6 +21,7 @@ public class BinarySearch {
 	
 	public static void main(String []args) {
 		int a[] = {12,34,6,7,8,90,54,3};
+		
 		int index = binarySearch(a,7);
 		System.out.println(index);
 	}

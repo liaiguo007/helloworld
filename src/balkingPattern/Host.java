@@ -2,6 +2,8 @@ package balkingPattern;
 
 import java.util.concurrent.TimeoutException;
 
+
+
 public class Host {
 
     private final long timeout;//超时时间

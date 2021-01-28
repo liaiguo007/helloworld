@@ -8,8 +8,8 @@ public class ServerThread extends Thread{
 	}
 	
 	public void run() {
-		
-		while(true) {
+		int i = 0;
+		while(i < 30) {
 			data.save();
 			try {
 				Thread.sleep(1000);
