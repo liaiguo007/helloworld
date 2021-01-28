@@ -20,7 +20,7 @@ public class RealData implements Data{
 		this.content = new String(buffer);
 		System.out.println("end making Real Data + ***********************");
 	}
-	
+
 	public String getContent() {
 		return content;
 	}

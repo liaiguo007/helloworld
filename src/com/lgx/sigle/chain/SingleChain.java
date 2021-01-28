@@ -17,6 +17,7 @@ public class SingleChain {
 		return pre;
 		
 	}
+	//
 	public static Node reverseList(Node head) {
 		if (head == null || head.next == null)
 			return head;
@@ -26,6 +27,7 @@ public class SingleChain {
 		head.next = null;
 		return new_head;
 	}
+	
 	public static void main(String []args) {
 		
 		Node head = new Node(0);
